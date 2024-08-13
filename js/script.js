@@ -15,10 +15,10 @@ $(function(){
 			console.log(window.scrollY);
 			if(pre_position > e.changedTouches[0].pageY) {
 		        //scrollBy(0,(pre_position-window.scrollY)*2);
-		        $("html, body").stop().animate({scrollTop: window.scrollY-100}, 10);
+		        $("html, body").stop().animate({scrollTop: window.scrollY-50}, 1);
 		    } else {
 		        //scrollBy(0,(pre_position-window.scrollY)*2);
-		        $("html, body").stop().animate({scrollTop: window.scrollY+100}, 10);
+		        $("html, body").stop().animate({scrollTop: window.scrollY+50}, 1);
 		    }
 		    pre_position = e.changedTouches[0].pageY;
 		});
